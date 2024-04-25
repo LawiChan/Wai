@@ -2,294 +2,290 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+.logo {
+    max-width: 275px;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    padding: 20px;
+}
+
+header {
+    background-color:tan;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-position: right;
+    padding: .5em;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:link {
+    color: #ffffff;
+}
+
+header a:visited {
+    color: #ffffff;
+}
+
+header a:hover {
+    color: #90C7E3;
+}
+
+header a:active {
+    color:#DDDDDD;
+}
 
 h1 {
-    font-family: 'dancing script', cursive ;
-    text-transform: uppercase;
     text-align: center;
-    font-size: 4em;
-    font-style: italic;
-    color: goldenrod;
+    font-size: 1.5em;
+    color: #666666;
 }
 
-h2,h5{
-    font-family: 'Open Sans', sans-serif;
-    color: blue;
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000000;
+    background-color: tan;
+    text-align: center;
+    border: 3px solid black;
+    line-height: 50px;
+    margin-top: 18px;
+    border-bottom: 2px solid whitesmoke;
 }
 
-h3 {
-    text-align: left;
-    color: #ffd700;
+main img {
+    float: right;
+    border: 2px solid blueviolet;
 }
- 
-h4 {
-    text-align: center;
-    color: #706b4c;
-    font-family: 'dancing script', cursive ;
-    text-transform: uppercase;
+
+table {
+    border: 5px dashed #000000;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: rgb(255, 250, 205);
 }
+
+th {
+    background-color:tan;
+    color: #000000;
+    padding: 10px;
+    border-bottom: #000000;
+}
+
+tr:nth-child(even){
+    background-color: #eeeeee;
+}
+
+td {
+    border: 1px dashed #000000;
+    padding: 10px;
+}
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.video-container {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 nav {
-    background-color: #146eb4;
-    border-top: 3px solid burlywood;
-    border-bottom: 3px solid burlywood;
-    padding: 7px;
+    font-weight: bold;
+    text-align: center;
+    background-color: goldenrod;
+    line-height: .35em;
+    color: #000000;
 }
 
 nav ul {
     list-style-type: none;
-    text-align: center;
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
-}
-
-nav ul li a {
-    padding-right: 25px;
-    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 nav li {
-    display: inline;
-    
+    padding: 1.5em .5em 1.5em .5em; 
+    width: 100%;
+    border-bottom: solid 1px #344873;
+}
+
+nav a {
+    text-decoration: none;
 }
 
 nav a:link {
-    color:#FFFFFF;
+    color: #5C7FA3;
 }
 
 nav a:visited {
-    color:#FFFFFF;
+    color:#344873;
 }
 
 nav a:hover {
-    color:#ffd700;
+    color: #A52A2A;
 }
 
 nav a:active {
-    color:#d3d3d3;
+    color: #000000;
 }
 
-#homehero {
-    /*background-image: url(images/leaves.png);*/
-    height: 100px;
+main {
+    padding: 0 1em 0 1em;
+}
+
+#homehero { /*This is the css for homehero*/
+    background-image: url(images/guitars.jpg);
+    height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color:#232f3e;
 }
 
 #homehero h1 {
     text-align: center;
-    color: rgb(67, 106, 122);
-    text-shadow: 4px 2px 2px greenyellow;
+    color: white;
+    text-shadow: 2px 2px 2px black;
     margin: 0;
-    padding: 30px;
-}
-
-.gallery-thumbnails {
-    border-radius:5px;
-}
-
-.gallery .preview {
-    width:100%;
-}
-
-.gallery .gallery-thumbnails img {
-    width:100px;
-    height:75px;
-    margin: 3px 10px 10px 0;
-}
-
-.gallery .gallery-thumbnails img:hover {
-    opacity: .8;
-    cursor: pointer;
-}
-
-.gallery .preview img#preview {
-    padding: 1px;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto !important;
-    display: block !important;
-}
-
-
-.home-photo {
-    border-radius: 20px;
-    width: 90%;
-    height: 80%;
-    margin: 60px;
-
-}
-
-.image-fluid {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    margin: 15px;
     padding: 10px;
+    background-color: rgba(5,10,0,.5);
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #666666;
     margin: 0;
 }
 
-main {
-    max-width: 1100px;
-    margin: 20px auto;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.center-text {
-    text-align: center;
-    font-weight: 700;
-}
-
-.myButton {
-    background-color: #706b4c;
-    border-radius: 10px;
-    display: inline-block;
-    color: aliceblue;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 20px;
-    border: 2px solid #000000;
-    padding: 10px 20px;
-    background-color: goldenrod;
-
-}
-
-/* Default styles */
-.game-controls {
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-}
-
-.game-controls {
-    margin: 30px 30px 30px 30px;
-    text-align: center;
-}
-
-canvas {
-    background-color: #3b250a;
-    margin: 0 auto;
+.wrap {
+    border: 3px dashed black;
+    background-color: rgb(255, 250, 205);
+    text-shadow: #90C7E3;
     display: block;
-    background-image: url(images/peace.jpg);
-    background-repeat: no-repeat;
-    border: 3px solid purple;
-    box-shadow: 5px 5px 5px 5px goldenrod;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+label {
+    float: left;
+    width: 8em;
+    padding-right: 1em;
+}
+
+input, textarea {
+    margin-bottom: .5em;
+    display: block;
+}
+
+.change {
+    background-color: #be3627;
+    color: #DDDDDD;
+    width:270px;
+    height: 40px;
+    border-radius: 50px;
 }
 
 footer {
-    border-top: 1px solid gray;
-    padding: 10px;
-    clear: both;
-    color: #000000;
-    background-color: #000000;
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+    background-color: tan;
 }
 
 footer a {
     text-decoration: none;
-    color: #f5f5f5;
-    text-align: left;
 }
 
-h1{
-    font-size: 3em;
-}
 
-.logo {
-    display: block;
-    margin: 0 auto;
-}
+@media only screen and (min-width: 280px){
+    /*The CSS will work ONLY IF the screen size is greater than 360px */
+    h1{
+        font-size: 2em;
+        letter-spacing: .25em;
+    }
 
-.shadow {
-    box-shadow: 15px 10px ;
-    border: 1px dashed gray;
-}
+    textarea {
+        width: 11em;
+        height: 10em;
+    }
 
-.resume-content {
-    border-left: 5px solid #b5b8b0;
-    padding: 20px;
-}
+    .change {
+        background-color:#ff00e9;
+        width: 7em;
+        height:3em;
+    }
 
-footer .footer-bottom {
-    background-color: #146eb4;
-    padding: 5px;
-    margin: -10px;
-    text-align: center;
+    .wrap {
+        padding: 40px 40px 40px 15px;
+    }
+ }
 
-}
+ @media only screen and (min-width: 1024px){
+    /*The CSS will work ONLY IF the screen size is greater than 1024px */
+    nav ul {
+        max-width: 1024px;
+        margin: 0 auto;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        padding-right: 2em;
+    }
 
-footer p {
-    color: #f5f5f5;
-}
+    nav li {
+        width: 12em;
+        border-bottom: none;
+    }
 
-footer a {
-    text-align: left;
-}
+    /*.wrap {
+        max-width: 1024px;
+        margin: 0 auto;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        padding-right: 2em;
+    }*/
 
-/* CSS Adjustments for Macbook and Tablets screnn size */
-@media only screen and (max-width: 2560px) {
-h1{
-    font-size: 1.8em;
-}
+    main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        width: 80%;
+        background-color: #FFFFFF;
+    }
 
-.home-photo {
-    border-radius: 40px;
-    width: 90%;
-    height: 80%;
-    margin: 60px;
-}
+    .change {
+        background-color: #be3627;
+        color: #DDDDDD;
+        width:270px;
+        height: 40px;
+        border-radius: 50px;
+    }
 
-p {
-    margin: 20px 10px 10px 20px;
-}
+    textarea {
+        width: 21em;
+        height: 15em;
+    }
 
+    .wrap {
+        padding: 40px 40px 40px 50px;
+    }
+    
 }
-/* CSS Adjustments for Smartphones */
-@media only screen and (max-width: 830px) {
-h1{
-    font-size: 1.5em;
-}
-.home-photo {
-    border-radius: 45px;
-    width: 85%;
-    height: 85%;
-    margin: 40px;
-}
-
-p {
-    margin: 20px 20px 20px 20px;
-}
-
-footer .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 5px;
-}
-}
-/* JavaScript Game changes for mobile */
-.mobile{
-	display:none;
-}
-@media only screen and (max-width: 768px){
-	.desktop{
-		display:none;
-	}
-	.mobile{
-		display: block;
-		touch-action: manipulation;
-	}
-
-}
+    
+    
